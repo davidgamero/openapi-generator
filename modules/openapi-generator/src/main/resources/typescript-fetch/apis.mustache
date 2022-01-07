@@ -15,8 +15,14 @@ import {
 } from '../models';
 {{/imports.0}}
 
+
+{{#imports.0}}
 {{#imports}}
 import { {{classname}} } from '..{{filename}}{{extensionForDeno}}';
+{{/imports}}
+{{/imports.0}}
+
+{{#imports}}
 {{/imports}}
 
 {{#operations}}
