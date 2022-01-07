@@ -772,6 +772,7 @@ public class TypeScriptFetchClientCodegen extends AbstractTypeScriptClientCodege
             existingClassNames.add(className);
             existingRecordClassNames.add(className + "Record");
             im.put("className", className);
+            im.put("filename", ((String) im.get("import")).replace(".", "/"));
         }
 
         if (this.getSagasAndRecords()) {
